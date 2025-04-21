@@ -1,6 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer 0": "capybara:item/bed"
+    "layer0": "capybaramod:item/bed"
+
   }
 }
