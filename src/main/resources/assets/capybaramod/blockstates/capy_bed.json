@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model":  "capybaramod:block/capy_bed"
+    }
+  }
+}
