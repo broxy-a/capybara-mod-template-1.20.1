@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "category;": "food",
+  "cookingtime": 100,
+  "experience": 0.4,
+  "ingredient": {
+    "item": "capybaramod:sweet_potato"
+  },
+  "result": "capybaramod:baked_sweet_potato"
+}

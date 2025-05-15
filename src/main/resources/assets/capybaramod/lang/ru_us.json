@@ -1,8 +1,16 @@
 {
-  "item.capybaramod.token": "Талисман Капибары",
-  "item.capybaramod.totem": "Тотем Капибары",
+  "item.capybaramod.token": "Талисман капибары",
+  "item.capybaramod.totem": "Тотем капибары",
+  "item.capybaramod.capy_flute": "Флейта капибар",
+  "item.capybaramod.sweet_potato": "Батат",
+  "item.capybaramod.baked_sweet_potato": "Запеченный батат",
+  "item.capybaramod.guava": "Гуава",
+  "item.capybaramod.magic_salad": "Магический салат",
+  "effect.capybaramod.tranquility": "Умиротворение",
 
-  "block.capybaramod.capy_bed": "Capybara Bed",
+
+  "block.capybaramod.capy_bed": "Лежанка Капибар",
+
 
   "itemgroup.token": "Capybara Mod"
 }

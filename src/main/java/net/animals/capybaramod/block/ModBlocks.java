@@ -13,6 +13,7 @@ import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
@@ -27,6 +28,7 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.GRASS)
 
             ));
+
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItems(name, block);

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "tag":  "minecraft:wool" },
+    { "item":  "minecraft:hay_block"},
+    { "tag":   "minecraft:leaves"}
+  ],
+  "result": {
+    "item": "capybaramod:capy_bed",
+    "count": 1
+  }
+}

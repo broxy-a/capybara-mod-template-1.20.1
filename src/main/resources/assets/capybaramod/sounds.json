@@ -1,0 +1,13 @@
+{
+  "capy_flute": {
+    "subtitle": "sounds.capybaramod.capy_flute",
+    "sounds": [
+      "capybaramod:capy_flute"
+    ]
+}, "capy_flute_shift": {
+  "subtitle": "sounds.capybaramod.capy_flute_shift",
+  "sounds": [
+    "capybaramod:capy_flute_shift"
+  ]
+}
+}

@@ -1,8 +1,16 @@
 {
-  "item.capybaramod.token": "Capy Token",
-  "item.capybaramod.totem": "Capy Totem",
+  "item.capybaramod.token": "Capy token",
+  "item.capybaramod.totem": "Capy totem",
+  "item.capybaramod.capy_flute": "Capy flute",
+  "item.capybaramod.sweet_potato": "Sweet potato",
+  "item.capybaramod.baked_sweet_potato": "Baked sweet potato",
+  "item.capybaramod.guava": "Guava",
+  "item.capybaramod.magic_salad": "Magic salad",
 
-  "block.capybaramod.capy_bed": "Capybara Bed",
+  "effect.capybaramod.tranquility": "Tranquility",
+
+
+  "block.capybaramod.capy_bed": "Capybara bed",
 
   "itemgroup.token": "Capybara Mod"
 
