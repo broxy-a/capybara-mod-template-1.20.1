@@ -1,7 +1,6 @@
 package net.animals.capybaramod; // Путь к пакету
 
 import net.animals.capybaramod.block.ModBlocks;
-import net.animals.capybaramod.effect.custom.ModEffects;
 import net.animals.capybaramod.item.ModItemGroup; // Импорт класса для создания вкладки в креативе
 import net.animals.capybaramod.item.ModItems; // Регистрация предметов
 import net.animals.capybaramod.sound.ModSounds;
@@ -20,7 +19,7 @@ public class CapybaraMod implements ModInitializer {
 	public void onInitialize() {
 		ModItemGroup.registerItemsGroup(); // Регистрация вкладки креатива.
 
-		ModEffects.registerStatusEffects(); // Регистрация эффектов.
+		//ModEffects.registerStatusEffects(); // Регистрация эффектов.
 		ModItems.registerModItems(); // Регистрация предметов.
 		ModBlocks.registerModBlocks(); // Регистрация блоков.
 		ModSounds.registerSounds(); // Регистрация звуков.

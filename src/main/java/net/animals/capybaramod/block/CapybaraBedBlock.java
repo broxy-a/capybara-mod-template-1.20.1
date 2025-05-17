@@ -3,17 +3,24 @@ package net.animals.capybaramod.block; // Путь до этого класса
 import net.minecraft.block.Block; // Импот класса для создания классов
 import net.minecraft.block.BlockState; // Импорт для состояния блока (направление, уровень и т.д)
 import net.minecraft.block.HorizontalFacingBlock; // Импорт для направления блока в стороны
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity; // Импорт для сущностей майнкрафта
 import net.minecraft.entity.LivingEntity; // Импорт для ЖИВЫХ существ
 import net.minecraft.entity.effect.StatusEffectInstance; // Эффекты от зелей и т.д
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.ItemPlacementContext; // Импорт для того как блок устанавливается
+import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundCategory; // Импорт для указания категории звука
 import net.minecraft.sound.SoundEvents; // Предопределенные звуки (например листва)
 import net.minecraft.state.StateManager; //
+import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.math.BlockPos; // Координаты блока в мире
+import net.minecraft.world.BlockView;
 import net.minecraft.world.World; // Мир в котором всё происходит
 import org.jetbrains.annotations.Nullable; // Проверка на null
+
+import java.util.List;
 
 public class CapybaraBedBlock extends Block {
     // Класс создания блока, но имеет расширение extends - обычного блока. Значит, это обычный блок но можно менять его поведение
@@ -47,5 +54,10 @@ public class CapybaraBedBlock extends Block {
 
     }
 
+    @Override
+    public void appendTooltip(ItemStack stack, @Nullable BlockView world, List<Text> tooltip, TooltipContext options) {
+        tooltip.add(Text.translatable("tooltip.capybaramod.capy_bed.tooltip").formatted(Formatting.GRAY));
+        super.appendTooltip(stack, world, tooltip, options);
+    }
 }
 

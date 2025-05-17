@@ -7,10 +7,19 @@
   "item.capybaramod.guava": "Guava",
   "item.capybaramod.magic_salad": "Magic salad",
 
-  "effect.capybaramod.tranquility": "Tranquility",
-
 
   "block.capybaramod.capy_bed": "Capybara bed",
+
+  "tooltip.capybaramod.capy_flute.tooltip1": "SHIFT + RBM, or RBM",
+  "tooltip.capybaramod.capy_flute.tooltip2": "A true melody for true aquatic rodents",
+  "item.capybaramod.sweet_potato.tooltip": "A hearty root vegetable.",
+  "item.capybaramod.baked_sweet_potato.tooltip": "Warm, soft, and sweet.",
+  "item.capybaramod.guava.tooltip": "Fruit with a fresh and tangy flavor.",
+  "item.capybaramod.magic_salad.tooltip": "A colorful mix of guava and sweet potato. Has magical properties",
+
+
+
+  "tooltip.capybaramod.capy_bed.tooltip": "A cozy spot for capybaras to relax.",
 
   "itemgroup.token": "Capybara Mod"
 
