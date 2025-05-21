@@ -6,9 +6,13 @@
   "item.capybaramod.baked_sweet_potato": "Baked sweet potato",
   "item.capybaramod.guava": "Guava",
   "item.capybaramod.magic_salad": "Magic salad",
+  "item.capybaramod.raw_capybarium": "Raw capybarium",
+  "item.capybaramod.capybarium_ingot": "Capybarium ingot",
 
 
   "block.capybaramod.capy_bed": "Capybara bed",
+  "block.capybaramod.capy_ore": "Capybara ore",
+  "block.capybaramod.deepslate_capy_ore": "Deepslate capy ore",
 
   "tooltip.capybaramod.capy_flute.tooltip1": "SHIFT + RBM, or RBM",
   "tooltip.capybaramod.capy_flute.tooltip2": "A true melody for true aquatic rodents",

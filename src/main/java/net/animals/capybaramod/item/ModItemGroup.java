@@ -3,7 +3,6 @@ package net.animals.capybaramod.item;
 import net.animals.capybaramod.CapybaraMod;
 import net.animals.capybaramod.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup; // Класс для создания пользовательской вкладки в креативном инвентаре с помощью Fabric API.
-import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ItemGroup; // Стандартная вкладка в креативном меню
 import net.minecraft.item.ItemStack; // Стек предметов, нужен для значка вкладки.
 import net.minecraft.registry.Registries;
@@ -32,6 +31,11 @@ public class ModItemGroup {
                         entries.add(ModItems.BAKED_SWEET_POTATO);
                         entries.add(ModItems.GUAVA);
                         entries.add(ModItems.MAGIC_SALAD);
+
+                        entries.add(ModBlocks.CAPY_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_CAPY_ORE);
+                        entries.add(ModItems.RAW_CAPYBARIUM);
+                        entries.add(ModItems.CAPYBARIUM_INGOT);
 
 
                     }).build());

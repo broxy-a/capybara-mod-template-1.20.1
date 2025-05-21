@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "capybaramod:capy_bed"
+    "capybaramod:capy_bed",
+     "capybaramod:capy_ore",
+    "capybaramod:deepslate_capy_ore"
   ]
 }

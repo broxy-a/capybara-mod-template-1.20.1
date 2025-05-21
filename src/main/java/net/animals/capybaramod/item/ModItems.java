@@ -5,9 +5,7 @@ import net.animals.capybaramod.item.custom.CapyFluteItem;
 import net.animals.capybaramod.item.tooltip.TooltipItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings; // Импорт класса для настройки предметов (редкость, стакуемость и т.д)
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries; // Импорт класса для управления содержимым вкладок.
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents; // Импорт интерфейса для добавления предметов в вкладки в креативе.
 import net.minecraft.item.Item; // Класс для создания предметов
-import net.minecraft.item.ItemGroups; // Доступ к дефолтным вкладкам предметов
 import net.minecraft.registry.Registries; // Содержит реестры (база данных) всех игровых объектов.
 import net.minecraft.registry.Registry; // Класс для регистрации предметов в реестр игры (Базу данных)
 import net.minecraft.util.Identifier; // Идентификатор нужны для регистрации предметов.
@@ -33,6 +31,10 @@ public class ModItems {
 
     public static final Item MAGIC_SALAD = registerItem("magic_salad",
             new TooltipItem((new FabricItemSettings().food(ModFoodComponents.MAGIC_SALAD)),  "item.capybaramod.magic_salad.tooltip"));
+
+    public static final Item RAW_CAPYBARIUM = registerItem("raw_capybarium", new Item(new FabricItemSettings()));
+
+    public static final Item CAPYBARIUM_INGOT = registerItem("capybarium_ingot", new Item(new FabricItemSettings()));
 
     // Метод для добавления премдетов во вкладку креативе
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {

@@ -6,8 +6,12 @@
   "item.capybaramod.baked_sweet_potato": "Запеченный батат",
   "item.capybaramod.guava": "Гуава",
   "item.capybaramod.magic_salad": "Магический салат",
+  "item.capybaramod.raw_capybarium": "Необработанный капибарий",
+  "item.capybaramod.capybarium_ingot": "Слиток капибария",
 
   "block.capybaramod.capy_bed": "Лежанка Капибар",
+  "block.capybaramod.capy_ore": "Капибарий",
+  "block.capybaramod.deepslate_capy_ore": "Глубинный капибарий",
 
   "tooltip.capybaramod.capy_flute.tooltip1": "SHIFT + ПКМ или ПКМ",
   "tooltip.capybaramod.capy_flute.tooltip2": "Мелодия для настоящих водных грызунов",
