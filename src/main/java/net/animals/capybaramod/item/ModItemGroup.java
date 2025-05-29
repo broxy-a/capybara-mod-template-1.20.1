@@ -25,7 +25,6 @@ public class ModItemGroup {
                         entries.add(ModItems.TOTEM);
                         entries.add(ModItems.CAPY_FLUTE);
 
-                        entries.add(ModBlocks.CAPY_BED);
 
                         entries.add(ModItems.SWEET_POTATO);
                         entries.add(ModItems.BAKED_SWEET_POTATO);
@@ -36,6 +35,17 @@ public class ModItemGroup {
                         entries.add(ModBlocks.DEEPSLATE_CAPY_ORE);
                         entries.add(ModItems.RAW_CAPYBARIUM);
                         entries.add(ModItems.CAPYBARIUM_INGOT);
+
+                        entries.add(ModBlocks.BARALEAF_LOG);
+                        entries.add(ModBlocks.BARALEAF_PLANKS);
+                        entries.add(ModBlocks.BARALEAF_STAIRS);
+                        entries.add(ModBlocks.BARALEAF_SLAB);
+                        entries.add(ModBlocks.BARALEAF_BUTTON);
+                        entries.add(ModBlocks.BARALEAF_PRESSURE_PLATE);
+                        entries.add(ModBlocks.BARALEAF_FENCE);
+                        entries.add(ModBlocks.BARALEAF_FENCE_GATE);
+                        entries.add(ModBlocks.BARALEAF_DOOR);
+                        entries.add(ModBlocks.BARALEAF_TRAPDOOR);
 
 
                     }).build());

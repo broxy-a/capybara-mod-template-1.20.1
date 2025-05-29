@@ -13,6 +13,17 @@
   "block.capybaramod.capy_bed": "Capybara bed",
   "block.capybaramod.capy_ore": "Capybara ore",
   "block.capybaramod.deepslate_capy_ore": "Deepslate capy ore",
+  "block.capybaramod.baraleaf_log": "Baraleaf log",
+  "block.capybaramod.baraleaf_planks": "Baraleaf planks",
+  "block.capybaramod.baraleaf_stairs": "Baraleaf stairs",
+  "block.capybaramod.baraleaf_slab": "Baraleaf slab",
+  "block.capybaramod.baraleaf_button": "Baraleaf button" ,
+  "block.capybaramod.baraleaf_pressure_plate": "Baraleaf pressure plate",
+  "block.capybaramod.baraleaf_fence": "Baraleaf fence",
+  "block.capybaramod.baraleaf_fence_gate": "Baraleaf fence gate",
+  "block.capybaramod.baraleaf_door": "Baraleaf door",
+  "block.capybaramod.baraleaf_trapdoor": "Baraleaf trapdoor",
+
 
   "tooltip.capybaramod.capy_flute.tooltip1": "SHIFT + RBM, or RBM",
   "tooltip.capybaramod.capy_flute.tooltip2": "A true melody for true aquatic rodents",

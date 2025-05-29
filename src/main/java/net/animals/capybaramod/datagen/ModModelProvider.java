@@ -15,9 +15,22 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+        BlockStateModelGenerator.BlockTexturePool baraleafPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BARALEAF_PLANKS);
+
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CAPY_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_CAPY_ORE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CAPY_BED);
+        blockStateModelGenerator.registerLog(ModBlocks.BARALEAF_LOG).log(ModBlocks.BARALEAF_LOG);
+
+        baraleafPool.stairs(ModBlocks.BARALEAF_STAIRS);
+        baraleafPool.slab(ModBlocks.BARALEAF_SLAB);
+        baraleafPool.button(ModBlocks.BARALEAF_BUTTON);
+        baraleafPool.pressurePlate(ModBlocks.BARALEAF_PRESSURE_PLATE);
+        baraleafPool.fence(ModBlocks.BARALEAF_FENCE);
+        baraleafPool.fenceGate(ModBlocks.BARALEAF_FENCE_GATE);
+
+        blockStateModelGenerator.registerDoor(ModBlocks.BARALEAF_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.BARALEAF_TRAPDOOR);
+
     }
 
     @Override
@@ -34,5 +47,6 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.RAW_CAPYBARIUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.CAPYBARIUM_INGOT, Models.GENERATED);
+
     }
 }

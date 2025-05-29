@@ -4,17 +4,43 @@ import net.animals.capybaramod.CapybaraMod;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
-import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
+
+    public static final Block BARALEAF_PLANKS = registerBlock("baraleaf_planks",
+            new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
+
+    public static final Block BARALEAF_STAIRS = registerBlock("baraleaf_stairs",
+            new StairsBlock(ModBlocks.BARALEAF_PLANKS.getDefaultState(), FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
+
+    public static final Block BARALEAF_SLAB = registerBlock("baraleaf_slab",
+            new SlabBlock(FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
+
+    public static final Block BARALEAF_BUTTON = registerBlock("baraleaf_button",
+            new ButtonBlock(FabricBlockSettings.copy(Blocks.OAK_PLANKS), BlockSetType.OAK, 10, true));
+
+    public static final Block BARALEAF_PRESSURE_PLATE = registerBlock("baraleaf_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.copy(Blocks.OAK_PLANKS), BlockSetType.OAK));
+
+    public static final Block BARALEAF_FENCE = registerBlock("baraleaf_fence",
+            new FenceBlock(FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
+    public static final Block BARALEAF_FENCE_GATE = registerBlock("baraleaf_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copy(Blocks.OAK_PLANKS), WoodType.OAK));
+
+    public static final Block BARALEAF_DOOR = registerBlock("baraleaf_door",
+            new DoorBlock(FabricBlockSettings.copy(Blocks.OAK_PLANKS), BlockSetType.OAK));
+
+    public static final Block BARALEAF_TRAPDOOR = registerBlock("baraleaf_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copy(Blocks.OAK_PLANKS), BlockSetType.OAK));
+
+    public static final Block BARALEAF_LOG = registerBlock("baraleaf_log",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)));
 
     public static final Block DEEPSLATE_CAPY_ORE = registerBlock("deepslate_capy_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copy(Blocks.DEEPSLATE_IRON_ORE)
@@ -30,7 +56,7 @@ public class ModBlocks {
                     UniformIntProvider.create(1, 5)
             ));
 
-    public static final Block CAPY_BED = registerBlock("capy_bed",
+    /* public static final Block CAPY_BED = registerBlock("capy_bed",
             new CapybaraBedBlock(FabricBlockSettings.create()
                     .strength(0.4f)
                     .burnable()
@@ -39,7 +65,7 @@ public class ModBlocks {
                     .mapColor(MapColor.GREEN)
                     .sounds(BlockSoundGroup.GRASS)
 
-            ));
+            ));*/
 
 
     private static Block registerBlock(String name, Block block) {
@@ -47,8 +73,8 @@ public class ModBlocks {
         return Registry.register(Registries.BLOCK, new Identifier(CapybaraMod.MOD_ID, name), block);
     }
 
-    private static Item registerBlockItems(String name, Block block) {
-        return Registry.register(Registries.ITEM, new Identifier(CapybaraMod.MOD_ID, name),
+    private static void registerBlockItems(String name, Block block) {
+        Registry.register(Registries.ITEM, new Identifier(CapybaraMod.MOD_ID, name),
                 new BlockItem(block, new FabricItemSettings()));
     }
 

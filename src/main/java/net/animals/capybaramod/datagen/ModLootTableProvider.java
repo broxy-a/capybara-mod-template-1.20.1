@@ -23,6 +23,18 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
         addDrop(ModBlocks.CAPY_ORE, oreDrops(ModBlocks.CAPY_ORE, ModItems.RAW_CAPYBARIUM)); // Выпадение необработанного ресурса с блока
         addDrop(ModBlocks.DEEPSLATE_CAPY_ORE, oreDrops(ModBlocks.DEEPSLATE_CAPY_ORE, ModItems.RAW_CAPYBARIUM));
+        addDrop(ModBlocks.BARALEAF_LOG);
+        addDrop(ModBlocks.BARALEAF_PLANKS);
+
+        addDrop(ModBlocks.BARALEAF_STAIRS);
+        addDrop(ModBlocks.BARALEAF_BUTTON);
+        addDrop(ModBlocks.BARALEAF_PRESSURE_PLATE);
+        addDrop(ModBlocks.BARALEAF_FENCE);
+        addDrop(ModBlocks.BARALEAF_FENCE_GATE);
+        addDrop(ModBlocks.BARALEAF_TRAPDOOR);
+
+        addDrop(ModBlocks.BARALEAF_SLAB, slabDrops(ModBlocks.BARALEAF_SLAB));
+        addDrop(ModBlocks.BARALEAF_DOOR, doorDrops(ModBlocks.BARALEAF_DOOR));
 
     }
 

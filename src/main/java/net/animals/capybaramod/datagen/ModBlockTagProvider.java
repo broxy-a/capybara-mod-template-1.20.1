@@ -18,17 +18,22 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
+        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+                .add(ModBlocks.BARALEAF_LOG)
+                .add(ModBlocks.BARALEAF_PLANKS);
+
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.CAPY_ORE)
                 .add(ModBlocks.DEEPSLATE_CAPY_ORE);
-
-        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.CAPY_ORE)
                 .add(ModBlocks.DEEPSLATE_CAPY_ORE);
 
-        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL);
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(ModBlocks.BARALEAF_FENCE);
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.BARALEAF_FENCE_GATE);
 
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_4")));
     }

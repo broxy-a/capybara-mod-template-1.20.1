@@ -49,14 +49,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion("has_sweet_potato", conditionsFromItem(ModItems.SWEET_POTATO)).
                 offerTo(exporter, new Identifier("capybaramod", "baked_sweet_potato_smoker"));
 
-        // Бесформенный крафт кровати
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.CAPY_BED, 1)
-                .input(Ingredient.fromTag(ItemTags.WOOL))
-                .input(Items.HAY_BLOCK)
-                .input(Ingredient.fromTag(ItemTags.LEAVES))
-                .criterion("has_wool", conditionsFromTag(ItemTags.WOOL)) // Что нужно что бы рецепт появился в книге
-                .offerTo(exporter, new Identifier("capybaramod", "capy_bed"));
-
 
         // Форменный крафт флейты
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CAPY_FLUTE, 1)
@@ -88,6 +80,46 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('X', ModItems.TOKEN)
                 .criterion(hasItem(ModItems.TOKEN), conditionsFromItem(ModItems.TOKEN))
                 .offerTo(exporter, new Identifier("capybaramod", "totem"));
+
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BARALEAF_PLANKS, 4)
+                .input(ModBlocks.BARALEAF_LOG)
+                .criterion(hasItem(ModBlocks.BARALEAF_LOG), conditionsFromItem(ModBlocks.BARALEAF_LOG))
+                .offerTo(exporter, new Identifier("capybaramod","baraleaf_planks"));
+
+        createStairsRecipe(ModBlocks.BARALEAF_STAIRS, Ingredient.ofItems(ModBlocks.BARALEAF_PLANKS))
+                .criterion("has_baraleaf_planks", conditionsFromItem(ModBlocks.BARALEAF_PLANKS))
+                .offerTo(exporter, new Identifier("capybaramod", "baraleaf_stairs"));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BARALEAF_SLAB, Ingredient.ofItems(ModBlocks.BARALEAF_PLANKS))
+                .criterion("has_baraleaf_planks", conditionsFromItem(ModBlocks.BARALEAF_PLANKS))
+                .offerTo(exporter, new Identifier("capybaramod", "baraleaf_slab"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BARALEAF_BUTTON, 1)
+                .input(ModBlocks.BARALEAF_PLANKS)
+                .criterion(hasItem(ModBlocks.BARALEAF_PLANKS), conditionsFromItem(ModBlocks.BARALEAF_PLANKS))
+                .offerTo(exporter, new Identifier("capybaramod", "baraleaf_button"));
+
+        createPressurePlateRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BARALEAF_PRESSURE_PLATE, Ingredient.ofItems(ModBlocks.BARALEAF_PLANKS))
+                .criterion("has_baraleaf_planks", conditionsFromItem(ModBlocks.BARALEAF_PLANKS))
+                .offerTo(exporter, new Identifier("capybaramod", "baraleaf_pressure_plate"));
+
+        createFenceRecipe(ModBlocks.BARALEAF_FENCE, Ingredient.ofItems(ModBlocks.BARALEAF_PLANKS))
+                .criterion("has_baraleaf_planks", conditionsFromItem(ModBlocks.BARALEAF_PLANKS))
+                .offerTo(exporter, new Identifier("capybaramod", "baraleaf_fence"));
+
+        createFenceGateRecipe(ModBlocks.BARALEAF_FENCE_GATE, Ingredient.ofItems(ModBlocks.BARALEAF_PLANKS))
+                .criterion("has_baraleaf_planks", conditionsFromItem(ModBlocks.BARALEAF_PLANKS))
+                .offerTo(exporter, new Identifier("capybaramod", "baraleaf_fence_gate"));
+
+        createDoorRecipe(ModBlocks.BARALEAF_DOOR, Ingredient.ofItems(ModBlocks.BARALEAF_PLANKS))
+                .criterion("has_baraleaf_planks", conditionsFromItem(ModBlocks.BARALEAF_PLANKS))
+                .offerTo(exporter, new Identifier("capybaramod", "baraleaf_door"));
+
+        createTrapdoorRecipe(ModBlocks.BARALEAF_TRAPDOOR, Ingredient.ofItems(ModBlocks.BARALEAF_PLANKS))
+                .criterion("has_baraleaf_planks", conditionsFromItem(ModBlocks.BARALEAF_PLANKS))
+                .offerTo(exporter, new Identifier("capybaramod","baraleaf_trapdoor"));
+
     }
 
 
