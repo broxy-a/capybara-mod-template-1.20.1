@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.ArmorItem;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -47,6 +48,18 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.RAW_CAPYBARIUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.CAPYBARIUM_INGOT, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.CAPYBARIUM_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CAPYBARIUM_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CAPYBARIUM_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CAPYBARIUM_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CAPYBARIUM_HOE, Models.HANDHELD);
+
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.CAPYBARIUM_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.CAPYBARIUM_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.CAPYBARIUM_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.CAPYBARIUM_BOOTS));
+
 
     }
 }

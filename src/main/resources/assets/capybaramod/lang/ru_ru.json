@@ -1,17 +1,26 @@
 {
-  "item.capybaramod.token": "Талисман капибары",
-  "item.capybaramod.totem": "Тотем капибары",
+  "item.capybaramod.token": "Талисман капибар",
+  "item.capybaramod.totem": "Тотем капибар",
   "item.capybaramod.capy_flute": "Флейта капибар",
   "item.capybaramod.sweet_potato": "Батат",
   "item.capybaramod.baked_sweet_potato": "Запеченный батат",
   "item.capybaramod.guava": "Гуава",
-  "item.capybaramod.magic_salad": "Магический салат",
-  "item.capybaramod.raw_capybarium": "Необработанный капибарий",
-  "item.capybaramod.capybarium_ingot": "Слиток капибария",
+  "item.capybaramod.magic_salad": "Магический салад",
+  "item.capybaramod.raw_capybarium": "Рудный капибарий",
+  "item.capybaramod.capybarium_ingot": "Капибариумный слиток",
+  "item.capybaramod.capybarium_pickaxe": "Капибариумная кирка",
+  "item.capybaramod.capybarium_axe": "Капибариумный топор",
+  "item.capybaramod.capybarium_shovel": "Капибариумная лопата",
+  "item.capybaramod.capybarium_sword": "Капибариумная меч",
+  "item.capybaramod.capybarium_hoe": "Капибариумная мотыга",
+  "item.capybaramod.capybarium_helmet": "Капибариумный шлем",
+  "item.capybaramod.capybarium_chestplate": "Капибариумный нагрудник",
+  "item.capybaramod.capybarium_leggings": "Капибариумные поножи",
+  "item.capybaramod.capybarium_boots": "Капибариумные ботинки",
 
-  "block.capybaramod.capy_bed": "Лежанка Капибар",
-  "block.capybaramod.capy_ore": "Капибарий",
-  "block.capybaramod.deepslate_capy_ore": "Глубинный капибарий",
+
+  "block.capybaramod.capy_ore": "Капибариумная руда",
+  "block.capybaramod.deepslate_capy_ore": "Глубинная капибаруимная руда",
   "block.capybaramod.baraleaf_log": "Баралистовое бревно",
   "block.capybaramod.baraleaf_planks": "Баралистовые доски",
   "block.capybaramod.baraleaf_stairs": "Баралистовые ступеньки",
@@ -23,15 +32,15 @@
   "block.capybaramod.baraleaf_door": "Баралистовая дверь",
   "block.capybaramod.baraleaf_trapdoor": "Баралистовый люк",
 
-  "tooltip.capybaramod.capy_flute.tooltip1": "SHIFT + ПКМ или ПКМ",
-  "tooltip.capybaramod.capy_flute.tooltip2": "Мелодия для настоящих водных грызунов",
-  "item.capybaramod.sweet_potato.tooltip": "Питательный корнеплод.",
-  "item.capybaramod.baked_sweet_potato.tooltip": "Тёплый, мягкий и сладкий.",
-  "item.capybaramod.guava.tooltip": "Фрукт со свежим и кисло-сладким вкусом.",
-  "item.capybaramod.magic_salad.tooltip": "Яркая смесь гуавы и батата. Имеет магические свойства",
 
-
-  "tooltip.capybaramod.capy_bed.tooltip": "Уютное место для отдыха капибар.",
+  "tooltip.capybaramod.capy_flute.tooltip1": "SHIFT + ПКМ, или ПКМ.",
+  "tooltip.capybaramod.capy_flute.tooltip2": "Настощая мелодия для настоящих водных грызунов.",
+  "item.capybaramod.sweet_potato.tooltip": "Сытный корнеплод.",
+  "item.capybaramod.baked_sweet_potato.tooltip": "Теплый, мягкий и сладкий.",
+  "item.capybaramod.guava.tooltip": "Фрукт со свежим и тропическим вкусом.",
+  "item.capybaramod.magic_salad.tooltip": "Красочная смесь гуавы и батата. Имеет магические свойства.",
+  "item.capybaramod.capybarium_armor.tooltip": "Будь как капибара в воде.",
 
   "itemgroup.token": "Capybara Mod"
+
 }

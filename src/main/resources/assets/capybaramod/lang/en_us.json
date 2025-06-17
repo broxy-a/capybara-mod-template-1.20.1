@@ -8,7 +8,15 @@
   "item.capybaramod.magic_salad": "Magic salad",
   "item.capybaramod.raw_capybarium": "Raw capybarium",
   "item.capybaramod.capybarium_ingot": "Capybarium ingot",
-
+  "item.capybaramod.capybarium_pickaxe": "Capybarium pickaxe",
+  "item.capybaramod.capybarium_axe": "Capybarium axe",
+  "item.capybaramod.capybarium_shovel": "Capybarium shovel",
+  "item.capybaramod.capybarium_sword": "Capybarium sword",
+  "item.capybaramod.capybarium_hoe": "Capybarium hoe",
+  "item.capybaramod.capybarium_helmet": "Capybarium helmet",
+  "item.capybaramod.capybarium_chestplate": "Capybarium chestplate",
+  "item.capybaramod.capybarium_leggings": "Capybarium leggins",
+  "item.capybaramod.capybarium_boots": "Capybarium boots",
 
   "block.capybaramod.capy_bed": "Capybara bed",
   "block.capybaramod.capy_ore": "Capybara ore",
@@ -29,8 +37,9 @@
   "tooltip.capybaramod.capy_flute.tooltip2": "A true melody for true aquatic rodents",
   "item.capybaramod.sweet_potato.tooltip": "A hearty root vegetable.",
   "item.capybaramod.baked_sweet_potato.tooltip": "Warm, soft, and sweet.",
-  "item.capybaramod.guava.tooltip": "Fruit with a fresh and tangy flavor.",
+  "item.capybaramod.guava.tooltip": "Fruit with a fresh and tropic flavor.",
   "item.capybaramod.magic_salad.tooltip": "A colorful mix of guava and sweet potato. Has magical properties",
+  "item.capybaramod.capybarium_armor.tooltip": "be like a capybara in the water",
 
 
 

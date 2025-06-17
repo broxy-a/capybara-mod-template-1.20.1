@@ -120,6 +120,84 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion("has_baraleaf_planks", conditionsFromItem(ModBlocks.BARALEAF_PLANKS))
                 .offerTo(exporter, new Identifier("capybaramod","baraleaf_trapdoor"));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.CAPYBARIUM_PICKAXE, 1)
+                .pattern("XXX")
+                .pattern(" # ")
+                .pattern(" # ")
+                .input('X', ModItems.CAPYBARIUM_INGOT)
+                .input('#', Items.STICK)
+                .criterion(hasItem(ModItems.CAPYBARIUM_INGOT), conditionsFromItem(ModItems.CAPYBARIUM_INGOT))
+                .offerTo(exporter, new Identifier("capybaramod", "capybarium_pickaxe"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.CAPYBARIUM_AXE, 1)
+                .pattern("XX")
+                .pattern("X#")
+                .pattern(" #")
+                .input('X', ModItems.CAPYBARIUM_INGOT)
+                .input('#', Items.STICK)
+                .criterion(hasItem(ModItems.CAPYBARIUM_INGOT), conditionsFromItem(ModItems.CAPYBARIUM_INGOT))
+                .offerTo(exporter, new Identifier("capybaramod", "capybarium_axe"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.CAPYBARIUM_SHOVEL, 1)
+                .pattern("X")
+                .pattern("#")
+                .pattern("#")
+                .input('X', ModItems.CAPYBARIUM_INGOT)
+                .input('#', Items.STICK)
+                .criterion(hasItem(ModItems.CAPYBARIUM_INGOT), conditionsFromItem(ModItems.CAPYBARIUM_INGOT))
+                .offerTo(exporter, new Identifier("capybaramod", "capybarium_shovel"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.CAPYBARIUM_SWORD, 1)
+                .pattern("X")
+                .pattern("X")
+                .pattern("#")
+                .input('X', ModItems.CAPYBARIUM_INGOT)
+                .input('#', Items.STICK)
+                .criterion(hasItem(ModItems.CAPYBARIUM_INGOT), conditionsFromItem(ModItems.CAPYBARIUM_INGOT))
+                .offerTo(exporter, new Identifier("capybaramod", "capybarium_sword"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.CAPYBARIUM_HOE, 1)
+                .pattern("XX")
+                .pattern(" #")
+                .pattern(" #")
+                .input('X', ModItems.CAPYBARIUM_INGOT)
+                .input('#', Items.STICK)
+                .criterion(hasItem(ModItems.CAPYBARIUM_INGOT), conditionsFromItem(ModItems.CAPYBARIUM_INGOT))
+                .offerTo(exporter, new Identifier("capybaramod", "capybarium_hoe"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.CAPYBARIUM_HELMET, 1)
+                .pattern("XXX")
+                .pattern("X#X")
+                .input('X', ModItems.CAPYBARIUM_INGOT)
+                .input('#', ModItems.TOKEN)
+                .criterion(hasItem(ModItems.CAPYBARIUM_INGOT), conditionsFromItem(ModItems.CAPYBARIUM_INGOT))
+                .offerTo(exporter, new Identifier("capybaramod", "capybarium_helmet"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.CAPYBARIUM_CHESTPLATE, 1)
+                .pattern("X#X")
+                .pattern("XXX")
+                .pattern("XXX")
+                .input('X', ModItems.CAPYBARIUM_INGOT)
+                .input('#', ModItems.TOKEN)
+                .criterion(hasItem(ModItems.CAPYBARIUM_INGOT), conditionsFromItem(ModItems.CAPYBARIUM_INGOT))
+                .offerTo(exporter, new Identifier("capybaramod", "capybarium_chestplate"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.CAPYBARIUM_LEGGINGS, 1)
+                .pattern("XXX")
+                .pattern("X#X")
+                .pattern("X X")
+                .input('X', ModItems.CAPYBARIUM_INGOT)
+                .input('#', ModItems.TOKEN)
+                .criterion(hasItem(ModItems.CAPYBARIUM_INGOT), conditionsFromItem(ModItems.CAPYBARIUM_INGOT))
+                .offerTo(exporter, new Identifier("capybaramod", "capybarium_leggings"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.CAPYBARIUM_BOOTS, 1)
+                .pattern("X#X")
+                .pattern("X X")
+                .input('X', ModItems.CAPYBARIUM_INGOT)
+                .input('#', ModItems.TOKEN)
+                .criterion(hasItem(ModItems.CAPYBARIUM_INGOT), conditionsFromItem(ModItems.CAPYBARIUM_INGOT))
+                .offerTo(exporter, new Identifier("capybaramod", "capybarium_boots"));
     }
 
 

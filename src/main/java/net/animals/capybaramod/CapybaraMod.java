@@ -4,6 +4,7 @@ import net.animals.capybaramod.block.ModBlocks;
 import net.animals.capybaramod.item.ModItemGroup; // Импорт класса для создания вкладки в креативе
 import net.animals.capybaramod.item.ModItems; // Регистрация предметов
 import net.animals.capybaramod.sound.ModSounds;
+import net.animals.capybaramod.util.ModLootTableModify;
 import net.fabricmc.api.ModInitializer; // Интерфейс Fabric, для инициализации мода
 import org.slf4j.Logger; // Вывод логов (сообщений) в консоль
 import org.slf4j.LoggerFactory; // Фабрика логгеров
@@ -23,6 +24,7 @@ public class CapybaraMod implements ModInitializer {
 		ModItems.registerModItems(); // Регистрация предметов.
 		ModBlocks.registerModBlocks(); // Регистрация блоков.
 		ModSounds.registerSounds(); // Регистрация звуков.
+		ModLootTableModify.modify(); // Регистрация таблиц лута
 
 	}
 }

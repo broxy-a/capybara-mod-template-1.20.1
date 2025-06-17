@@ -25,16 +25,22 @@ public class ModItemGroup {
                         entries.add(ModItems.TOTEM);
                         entries.add(ModItems.CAPY_FLUTE);
 
-
-                        entries.add(ModItems.SWEET_POTATO);
-                        entries.add(ModItems.BAKED_SWEET_POTATO);
-                        entries.add(ModItems.GUAVA);
-                        entries.add(ModItems.MAGIC_SALAD);
-
                         entries.add(ModBlocks.CAPY_ORE);
                         entries.add(ModBlocks.DEEPSLATE_CAPY_ORE);
                         entries.add(ModItems.RAW_CAPYBARIUM);
                         entries.add(ModItems.CAPYBARIUM_INGOT);
+
+                        entries.add(ModItems.CAPYBARIUM_PICKAXE);
+                        entries.add(ModItems.CAPYBARIUM_AXE);
+                        entries.add(ModItems.CAPYBARIUM_SHOVEL);
+                        entries.add(ModItems.CAPYBARIUM_SWORD);
+                        entries.add(ModItems.CAPYBARIUM_HOE);
+
+                        entries.add(ModItems.CAPYBARIUM_HELMET);
+                        entries.add(ModItems.CAPYBARIUM_CHESTPLATE);
+                        entries.add(ModItems.CAPYBARIUM_LEGGINGS);
+                        entries.add(ModItems.CAPYBARIUM_BOOTS);
+
 
                         entries.add(ModBlocks.BARALEAF_LOG);
                         entries.add(ModBlocks.BARALEAF_PLANKS);
@@ -46,6 +52,12 @@ public class ModItemGroup {
                         entries.add(ModBlocks.BARALEAF_FENCE_GATE);
                         entries.add(ModBlocks.BARALEAF_DOOR);
                         entries.add(ModBlocks.BARALEAF_TRAPDOOR);
+
+                        entries.add(ModItems.SWEET_POTATO);
+                        entries.add(ModItems.BAKED_SWEET_POTATO);
+                        entries.add(ModItems.GUAVA);
+                        entries.add(ModItems.MAGIC_SALAD);
+
 
 
                     }).build());
