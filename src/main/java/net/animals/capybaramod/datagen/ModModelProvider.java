@@ -1,6 +1,7 @@
 package net.animals.capybaramod.datagen;
 
 import net.animals.capybaramod.block.ModBlocks;
+import net.animals.capybaramod.block.custom.SweetPotatoCropBlock;
 import net.animals.capybaramod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -31,6 +32,8 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerDoor(ModBlocks.BARALEAF_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.BARALEAF_TRAPDOOR);
+
+        blockStateModelGenerator.registerCrop(ModBlocks.SWEET_POTATO_CROP, SweetPotatoCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
 
     }
 

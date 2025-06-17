@@ -1,6 +1,7 @@
 package net.animals.capybaramod.item; // Путь до этого файла
 
 import net.animals.capybaramod.CapybaraMod; // Импорт основоного класса мода
+import net.animals.capybaramod.block.ModBlocks;
 import net.animals.capybaramod.item.custom.CapyFluteItem;
 import net.animals.capybaramod.item.custom.ModArmorItem;
 import net.animals.capybaramod.item.tooltip.TooltipItem;
@@ -53,6 +54,9 @@ public class ModItems {
             new ModArmorItem(ModArmorMaterials.CAPYBARIUM, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item CAPYBARIUM_BOOTS = registerItem("capybarium_boots",
             new ModArmorItem(ModArmorMaterials.CAPYBARIUM, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
+    public static final Item SWEET_POTATO_SEEDS = registerItem("sweet_potato_seeds",
+            new AliasedBlockItem(ModBlocks.SWEET_POTATO_CROP, new FabricItemSettings()));
 
     // Метод для добавления премдетов во вкладку креативе
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
