@@ -62,6 +62,8 @@ public class ModItemGroup {
 
 
 
+
+
                     }).build());
 // Метод который вызывается при инициализации мода
     public static void registerItemsGroup() {

@@ -2,6 +2,7 @@ package net.animals.capybaramod.block;
 
 import net.animals.capybaramod.CapybaraMod;
 import net.animals.capybaramod.block.custom.SweetPotatoCropBlock;
+import net.animals.capybaramod.block.custom.WaterLoggedCattailPlantBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
@@ -60,6 +61,8 @@ public class ModBlocks {
 
     public static final Block SWEET_POTATO_CROP = Registry.register(Registries.BLOCK, new Identifier(CapybaraMod.MOD_ID, "sweet_potato_crop"),
             new SweetPotatoCropBlock(FabricBlockSettings.copyOf(Blocks.POTATOES)));
+
+
 
     /* public static final Block CAPY_BED = registerBlock("capy_bed",
             new CapybaraBedBlock(FabricBlockSettings.create()

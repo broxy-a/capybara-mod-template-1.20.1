@@ -198,6 +198,32 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('#', ModItems.TOKEN)
                 .criterion(hasItem(ModItems.CAPYBARIUM_INGOT), conditionsFromItem(ModItems.CAPYBARIUM_INGOT))
                 .offerTo(exporter, new Identifier("capybaramod", "capybarium_boots"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, Items.STICK, 4)
+                .pattern("X")
+                .pattern("X")
+                .input('X', ModBlocks.BARALEAF_PLANKS)
+                .criterion(hasItem(ModBlocks.BARALEAF_PLANKS), conditionsFromItem(ModBlocks.BARALEAF_PLANKS))
+                .offerTo(exporter, new Identifier("capybaramod", "baraleaf_to_stick"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.BOWL, 4)
+                .pattern("# #")
+                .pattern(" # ")
+                .input('#', ModBlocks.BARALEAF_PLANKS)
+                .criterion("has_baraleaf_planks", conditionsFromItem(ModBlocks.BARALEAF_PLANKS))
+                .offerTo(exporter, new Identifier("capybaramod", "baraleaf_to_bowl"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, Items.CHEST)
+                .pattern("###")
+                .pattern("# #")
+                .pattern("###")
+                .input('#', ModBlocks.BARALEAF_PLANKS)
+                .criterion("has_baraleaf_planks", conditionsFromItem(ModBlocks.BARALEAF_PLANKS))
+                .offerTo(exporter, new Identifier("capybaramod", "baraleaf_to_crafting_table"));
+
+
+
+
     }
 
 

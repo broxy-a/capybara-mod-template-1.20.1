@@ -21,7 +21,7 @@ public class ModLootTableModify {
             if (JUNGLE_CHEST.equals(identifier)) {
                 LootPool.Builder poolBuilderOne = LootPool.builder() // Создание генерации лута
                         .rolls(ConstantLootNumberProvider.create(1)) // Количество попыток, каждый раз при генерации этого лута, выполняется 1 попытка чтобы получить этот предмет
-                        .conditionally(RandomChanceLootCondition.builder(1f)) // Шанс выпадения
+                        .conditionally(RandomChanceLootCondition.builder(0.3f)) // Шанс выпадения
                         .with(ItemEntry.builder(ModItems.CAPYBARIUM_INGOT)) // Сам предмет
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 4.0f)).build()); // Количество штук
                 builder.pool(poolBuilderOne.build());

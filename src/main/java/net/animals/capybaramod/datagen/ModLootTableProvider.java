@@ -44,6 +44,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
 
 
+
+
+
+
         BlockStatePropertyLootCondition.Builder builder = BlockStatePropertyLootCondition.builder(ModBlocks.SWEET_POTATO_CROP).properties(StatePredicate.Builder.create()
                 .exactMatch(SweetPotatoCropBlock.AGE_POTATO, 7));
         addDrop(ModBlocks.SWEET_POTATO_CROP, LootTable.builder() // Создание таблицы выпадений

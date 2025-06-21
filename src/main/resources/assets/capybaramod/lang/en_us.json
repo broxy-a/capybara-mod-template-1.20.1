@@ -19,6 +19,7 @@
   "item.capybaramod.capybarium_boots": "Capybarium boots",
   "item.capybaramod.sweet_potato_seeds": "Sweet potato seeds",
 
+
   "block.capybaramod.capy_bed": "Capybara bed",
   "block.capybaramod.capy_ore": "Capybara ore",
   "block.capybaramod.deepslate_capy_ore": "Deepslate capy ore",
@@ -32,6 +33,8 @@
   "block.capybaramod.baraleaf_fence_gate": "Baraleaf fence gate",
   "block.capybaramod.baraleaf_door": "Baraleaf door",
   "block.capybaramod.baraleaf_trapdoor": "Baraleaf trapdoor",
+
+
 
 
   "tooltip.capybaramod.capy_flute.tooltip1": "SHIFT + RBM, or RBM",
